@@ -1,5 +1,6 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
-import noteImage from '../assets/img1.png'; // Adjust the path as needed
+import noteImage from '../assets/img1.png'; 
 import addBtn from '../assets/addbutton.png';
 import lockIcon from '../assets/lock-icon.png';
 
@@ -62,10 +63,9 @@ const NoteGroup = () => {
     savedNotes[selectedGroup] = { content: currentNote, timestamp };
     localStorage.setItem('notes', JSON.stringify(savedNotes));
     setLastUpdated(timestamp);
-    setCurrentNote(''); // Clear the textarea after saving
+    setCurrentNote(''); 
   };
 
-  // Function to get the first and last letter of the group name
   const getGroupIconLetters = (name) => {
     if (!name) return '';
     const words = name.trim().split(' ');
