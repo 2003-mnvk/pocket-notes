@@ -13,12 +13,12 @@
   flex-direction: column;
   align-items: flex-start;
   position: relative;
-  overflow-y: auto; /* Enables vertical scrolling */
-  transition: width 0.3s; /* Smooth transition for collapsing */
+  overflow-y: auto;
+  transition: width 0.3s; 
 }
 
 .sidebar.collapsed {
-  width: 60px; /* Adjust as needed */
+  width: 60px; 
 }
 
 .collapse-btn {
@@ -45,7 +45,7 @@ h2 {
   padding: 0;
   margin: 0;
   width: 100%;
-  flex-grow: 1; /* Ensures the list grows to fill available space */
+  flex-grow: 1; 
 }
 
 .group-item {
@@ -83,13 +83,13 @@ h2 {
 }
 
 .sidebar.collapsed .group-name {
-  opacity: 0; /* Hide group name in collapsed state */
+  opacity: 0; 
 }
 
 .add-group-btn {
-  position: sticky; /* Makes the button sticky */
-  bottom: 20px; /* Keeps it 20px from the bottom */
-  left: 2500px; /* Adjust as needed */
+  position: sticky; 
+  bottom: 20px;
+  left: 2500px; 
   width: 80px;
   height: 80px;
   background-color: transparent;
@@ -115,7 +115,7 @@ h2 {
 }
 
 .sidebar.collapsed ~ .content-area {
-  width: calc(100% - 60px); /* Adjust to match collapsed sidebar */
+  width: calc(100% - 60px); 
 }
 
 .note-area {
